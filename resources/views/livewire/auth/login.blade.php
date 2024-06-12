@@ -2,28 +2,31 @@
 
 <div>
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-        <a href="{{ route('home') }}">
-            <x-logo class="w-auto h-16 mx-auto text-indigo-600" />
-        </a>
+        <div class="flex justify-center">
+            <a href="{{ route('home') }}">
+                <x-logo class="w-auto h-16 text-indigo-600" />
+            </a>
+        </div>
+        
 
-        <h2 class="mt-6 text-3xl font-extrabold text-center text-gray-900 leading-9">
+        <h2 class="mt-6 text-3xl font-extrabold text-center text-white leading-9">
             Sign in to your account
         </h2>
-        @if (Route::has('register'))
+        {{-- @if (Route::has('register'))
             <p class="mt-2 text-sm text-center text-gray-600 leading-5 max-w">
                 Or
                 <a href="{{ route('register') }}" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
                     create a new account
                 </a>
             </p>
-        @endif
+        @endif --}}
     </div>
 
-    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div class="px-4 py-8 bg-white shadow sm:rounded-lg sm:px-10">
+    <div class="mt-8 sm:mx-auto w-[798px]">
+        <div class="px-4 py-8 bg-[#110f2c] shadow sm:rounded-lg sm:px-10">
             <form wire:submit.prevent="authenticate">
                 <div>
-                    <label for="email" class="block text-sm font-medium text-gray-700 leading-5">
+                    <label for="email" class="block text-sm font-medium text-white leading-5">
                         Email address
                     </label>
 
@@ -37,7 +40,7 @@
                 </div>
 
                 <div class="mt-6">
-                    <label for="password" class="block text-sm font-medium text-gray-700 leading-5">
+                    <label for="password" class="block text-sm font-medium text-white  leading-5">
                         Password
                     </label>
 
@@ -53,7 +56,7 @@
                 <div class="flex items-center justify-between mt-6">
                     <div class="flex items-center">
                         <input wire:model.lazy="remember" id="remember" type="checkbox" class="form-checkbox w-4 h-4 text-indigo-600 transition duration-150 ease-in-out" />
-                        <label for="remember" class="block ml-2 text-sm text-gray-900 leading-5">
+                        <label for="remember" class="block ml-2 text-sm text-white  leading-5">
                             Remember
                         </label>
                     </div>
@@ -72,6 +75,26 @@
                         </button>
                     </span>
                 </div>
+
+                <div class="relative pt-[42px]">
+                    <div class="flex items-center">
+                        <div class="flex-grow border-t border-gray-400"></div>
+                        <span class="mx-4 text-white">OR</span>
+                        <div class="flex-grow border-t border-gray-400"></div>
+                    </div>
+                </div>
+        
+                <div class="flex justify-center items-center pt-[32px]">
+                    <x-google-logo class="w-[180px] h-[180px]" />
+                </div>
+                        @if (Route::has('register'))
+                            <p class="pt-[24px] text-sm text-center text-[#ECECEC] leading-5 max-w">
+                                Don't have an account?
+                                <a href="{{ route('register') }}" class="font-bold text-white hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
+                                    Sign up
+                                </a>
+                            </p>
+                        @endif
             </form>
         </div>
     </div>
