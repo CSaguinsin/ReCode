@@ -14,7 +14,7 @@
                     </div>
                     </dt>
                 </div>
-                     <h1 class="mt-[10rem] font-sans font-bold text-[32px] text-base leading-7 text-[#F9F9F9]">Store</h1>
+                     <h1 class="mt-[10rem] font-sans font-bold text-[2rem] text-base leading-7 text-[#F9F9F9]">Store</h1>
                      <p class="pt-[16px] font-sans text-[16px] text-base leading-7 text-[#F9F9F9]">Store your codes and write documentation
                         for your future purposes. With ReCode you can
                         compile codes in just one place.</p>
@@ -27,7 +27,7 @@
                 </div>
                 </dt>
             </div>
-            <h1 class="mt-[10rem] font-sans font-bold text-[32px] text-base leading-7 text-[#F9F9F9]">Re-use</h1>
+            <h1 class="mt-[10rem] font-sans font-bold text-[2rem] text-base leading-7 text-[#F9F9F9]">Re-use</h1>
             <p class="pt-[16px] font-sans text-[16px] text-base leading-7 text-[#F9F9F9]">Re-use your past codes for your next projects, In
                 this way it can fasten your development process.
                 You don’t need to write a new logic, just use the
@@ -42,7 +42,7 @@
                 </div>
                 </dt>
             </div>
-            <h1 class="mt-[10rem] font-sans font-bold text-[32px] text-base leading-7 text-[#F9F9F9]">Repeat</h1>
+            <h1 class="mt-[10rem] font-sans font-bold text-[2rem] text-base leading-7 text-[#F9F9F9]">Repeat</h1>
             <p class="pt-[16px] font-sans text-[16px] text-base leading-7 text-[#F9F9F9]">Repeat the same process over and over again to
                 10x your development process.</p>
         </div>

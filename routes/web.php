@@ -23,6 +23,7 @@ use App\Http\Controllers\PagesController;
 */
 
 Route::get('/', [PagesController::class, 'index'])->name('home');
+Route::get('/about', [PagesController::class, 'about'])->name('about');
 
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
