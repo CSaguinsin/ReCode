@@ -9,13 +9,18 @@
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body class="bg-[#050419]">
-        @if (Route::has('login'))
-            @include('livewire.welcome.navigation')
-        @endif
+    @if (Route::has('login'))
+        @auth
+            @include('livewire.authnavbar') <!-- Your navigation bar for authenticated users -->
+        @else
+            @include('livewire.welcome.navigation') <!-- Your navigation bar for guests -->
+        @endauth
+    @endif
     <main>
         @yield('content')
     </main>
 
     @include('livewire.welcome.footer')
 </body>
+
 </html>

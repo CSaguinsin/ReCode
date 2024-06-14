@@ -25,6 +25,11 @@ use App\Http\Controllers\PagesController;
 Route::get('/', [PagesController::class, 'index'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [PagesController::class, 'profile'])->name('profile');
+});
+
+
 Route::middleware('guest')->group(function () {
     Route::get('login', Login::class)
         ->name('login');

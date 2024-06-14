@@ -13,4 +13,8 @@ class PagesController extends Controller
     public function about(){
         return view('guest.about.about-index');
     }
+
+    public function profile() {
+        return view('profile.dashboard.profile-index');
+    }
 }
