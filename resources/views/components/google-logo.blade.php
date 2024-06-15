@@ -1,1 +1,1 @@
-a<img src="{{ asset('assets/logo/googleicon.png') }}" />
+<img src="{{ asset('assets/logo/googleicon.png') }}" />
