@@ -26,8 +26,14 @@ Route::get('/', [PagesController::class, 'index'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [PagesController::class, 'profile'])->name('profile');
+    Route::get('/profile',
+            [PagesController::class, 'profile'])
+                ->name('profile');
+    Route::get('/profile/add-new',
+            [PagesController::class, 'addNew'])
+                ->name('profile.addnew');
 });
+
 
 
 Route::middleware('guest')->group(function () {

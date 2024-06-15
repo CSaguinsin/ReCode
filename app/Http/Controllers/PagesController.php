@@ -17,4 +17,8 @@ class PagesController extends Controller
     public function profile() {
         return view('profile.dashboard.profile-index');
     }
+
+    public function addNew() {
+        return view('profile.addnew.addnew-index');
+    }
 }

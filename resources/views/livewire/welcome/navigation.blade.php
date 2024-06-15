@@ -22,7 +22,7 @@
         <div class="p-6 text-right ">
 
                 @if (Route::has('register'))
-                    <a href="{{ route('login') }}" class="  text-white hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Login</a>
+                    <a href="{{ route('login') }}" class="  text-white  dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-indigo-500">Login</a>
                 @endif
                     <a href="{{ route('register') }}">
                     <button type="button" class="text-black font-semibold ml-4 bg-[#21E8E6] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300  rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register</button>
