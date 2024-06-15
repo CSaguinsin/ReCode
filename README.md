@@ -1,66 +1,96 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Project Description📜
+Platform designed for developers. By providing a centralized hub to compile, store, and reuse code snippets. With ReCode, developers can focus on innovation rather than reinventing the wheel.
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# Tech Stack 💻
+<img align="left" width="60px" height="60px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+<img align="left" width="60px" height="60px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/alpinejs/alpinejs-original.svg" />
+<img align="left" width="60px" height="60px" style="padding-right:10px;"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
+<img align="left" width="60px" height="60px" style="padding-right:10px;"  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/livewire/livewire-original.svg" />
+<br />
+<br />
+<br />
+When envisioning ReCode, I sought a technology stack that resonated with my principles of simplicity and efficiency. The TALL stack—Tailwind CSS, Alpine.js, Laravel, and Livewire—stood out as the perfect fit.
+<br></br>
+Tailwind CSS revolutionized my approach to UI design. Its utility-first framework empowered me to craft bespoke interfaces with ease, ensuring that every element on ReCode aligns with our unique aesthetic and functional vision.
 
-## About Laravel
+Alpine.js emerged as the ideal solution for introducing interactivity within our platform. Its lightweight nature meant I could sprinkle rich, JavaScript-driven interactions without weighing down the user experience—a crucial factor for a platform that prioritizes speed and agility.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Laravel was a natural choice for the backbone of ReCode. Its expressive syntax and robust features not only accelerated development but also provided a stable foundation for our platform to scale. Laravel’s vibrant ecosystem and its commitment to elegant code made it an indispensable ally in bringing ReCode to life.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Livewire allowed me to blend server-side stability with front-end reactivity seamlessly. It simplified state management and made real-time updates a breeze, which is essential for a collaborative environment where developers share and manage code snippets in real-time.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Choosing the TALL stack was a deliberate decision to ensure that ReCode embodies the principles of developer-centric design. It’s a reflection of my commitment to building not just a platform but a community where innovation thrives without barriers.
 
-## Learning Laravel
+# UI Design ✍🎨
+When I'm designing a software first I visualize what would be the color palettes, fonts, typography and I'm also using the 8 point grid system for sizing, spacing, and laying out components relative to one another. This means that any padding, margin, button height, etc. is always a multiple of 8 pixels.
+### Landing page design
+![Landing Page](https://github.com/CSaguinsin/ReCode/assets/123741242/6216b6b7-cf1e-406e-8610-63fe5023635a)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+### Login & Signup UI designs
+![Login](https://github.com/CSaguinsin/ReCode/assets/123741242/936c0245-3ab1-4700-a51c-aa07db4df871)
+![Register](https://github.com/CSaguinsin/ReCode/assets/123741242/ac27d945-b1bf-4033-9f0d-c9376bfd5fd3)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+# Features 🎯
+Account Creation: Start by setting up your own account on ReCode. This personal space is where you can store, manage, and track your code snippets securely and efficiently.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Create with Ease: Add new code snippets effortlessly. Our user-friendly interface is designed for quick compilation and storage, paving the way for future innovations.
 
-## Laravel Sponsors
+Read and Retrieve: Easily access your personal repository of code snippets. Advanced search and filtering options allow you to swiftly navigate and review your work.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Update Instantly: Keep your code base up-to-date with our straightforward update features. Edit existing snippets on-the-fly to ensure your repository always contains your latest work.
 
-### Premium Partners
+Delete Safely: Remove outdated or unnecessary code with confidence. ReCode helps you maintain a tidy and effective workspace that aligns with your project’s progress.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+With these features, ReCode stands as a robust platform that not only streamlines code management but also enhances the individual developer’s productivity and creativity.
 
-## Contributing
+# How to run the project ❓
+1.) Clone the Repository:
+   - Navigate to the directory where you want to clone the project.
+ ```
+git clone https://github.com/CSaguinsin/TodoApp.git
+```
+2.) Navigate to the Project Directory:
+   - After cloning, move into the project directory
+ ```
+cd ReCode
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3.) Install Composer Dependencies:
+   - Run the following command to install PHP dependencies:
+ ```
+composer install
+```
 
-## Code of Conduct
+4.) Install NPM Dependencies:
+   - Run these commands to install JavaScript dependencies and compile assets:
+ ```
+npm install
+npm run dev
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5.) Set Up Environment File:
+   - Copy .env.example to .env
+ ```
+cp .env.example .env
+```
+   - Open .env and configure your environment variables, such as APP_URL, database credentials, etc.
 
-## Security Vulnerabilities
+6.) Generate Application Key:
+   - Run this command to generate a new application key
+ ```
+php artisan key:generate
+```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+7.) Run Migrations:
+   - Set up your database and run migrations:
+ ```
+php artisan migrate
+```
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+8.) Run the application servers:
+   - Use this two commands to start project
+ ```
+npm run dev
+php artisan serve
+```
+  - This will start a development server at http://localhost:8000.
