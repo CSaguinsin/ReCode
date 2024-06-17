@@ -38,12 +38,14 @@ new class extends Component
                         <div class=" px-[24px] flex justify-center items-center pt-[22px] pb-[8px]">
                             <a href="{{ route('profile.addnew') }}" class="text-black font-semibold w-[347px] h-[46px] bg-[#21E8E6] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-[14px]  text-center inline-block">Add new</a>
                         </div>
-                                <button class="flex items-center space-x-[8px] text-white py-2">
-                                    <x-code-snippets />
-                                    <div>
-                                        Code Snippets
-                                    </div>
-                                </button>
+                          <a href="{{ route('profile') }}">
+                            <button class="flex items-center space-x-[8px] text-white py-2">
+                                <x-code-snippets />
+                                <div>
+                                    Code Snippets
+                                </div>
+                            </button>
+                          </a>
                     </ul>
                     <ul class="py-2 pl-[24px] text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
                         <form method="POST" action="{{ route('logout') }}">
