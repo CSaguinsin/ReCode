@@ -1,5 +1,7 @@
 @extends('guest.layout.app')
+
 @section('title', 'Documentation')
+
 @section('content')
-    <livewire:documentation />
+    <livewire:docu-display :document-id="$id" />
 @endsection

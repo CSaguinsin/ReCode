@@ -19,8 +19,10 @@
             @foreach($documents as $document)
                 <tr>
                     <th scope="row" class="px-6 py-4 font-medium text-white whitespace-nowrap dark:text-white">
-                        {{ $document->title }}
+                        <a href="{{ route('profile.documentation', $document->id) }}">{{ $document->title }}</a>
+
                     </th>
+
                     <td class="px-6 py-4 text-white">
                         {{ $document->language }}
                     </td>

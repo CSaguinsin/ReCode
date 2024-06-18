@@ -10,6 +10,7 @@ use App\Livewire\Auth\Register;
 use App\Livewire\Auth\Verify;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Livewire\DocuDisplay;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,37 +27,27 @@ Route::get('/', [PagesController::class, 'index'])->name('home');
 Route::get('/about', [PagesController::class, 'about'])->name('about');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile',
-            [PagesController::class, 'profile'])
-                ->name('profile');
-    Route::get('/profile/add-new',
-            [PagesController::class, 'addNew'])
-                ->name('profile.addnew');
+    Route::get('/profile', [PagesController::class, 'profile'])->name('profile');
+    Route::get('/profile/add-new', [PagesController::class, 'addNew'])->name('profile.addnew');
+    Route::get('/profile/documentation/{id}', function ($id) {
+        return view('/profile/documentation.documentation-index', ['id' => $id]);
+    })->name('profile.documentation');
 });
-
-
 
 Route::middleware('guest')->group(function () {
-    Route::get('login', Login::class)
-        ->name('login');
-
-    Route::get('register', Register::class)
-        ->name('register');
+    Route::get('login', Login::class)->name('login');
+    Route::get('register', Register::class)->name('register');
 });
 
-Route::get('password/reset', Email::class)
-    ->name('password.request');
-
-Route::get('password/reset/{token}', Reset::class)
-    ->name('password.reset');
+Route::get('password/reset', Email::class)->name('password.request');
+Route::get('password/reset/{token}', Reset::class)->name('password.reset');
 
 Route::middleware('auth')->group(function () {
     Route::get('email/verify', Verify::class)
         ->middleware('throttle:6,1')
         ->name('verification.notice');
 
-    Route::get('password/confirm', Confirm::class)
-        ->name('password.confirm');
+    Route::get('password/confirm', Confirm::class)->name('password.confirm');
 });
 
 Route::middleware('auth')->group(function () {
@@ -64,6 +55,6 @@ Route::middleware('auth')->group(function () {
         ->middleware('signed')
         ->name('verification.verify');
 
-    Route::post('logout', LogoutController::class)
-        ->name('logout');
+    Route::post('logout', LogoutController::class)->name('logout');
 });
+
