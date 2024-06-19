@@ -1,17 +1,11 @@
 <form wire:submit.prevent="save">
     <div class="max-w-screen-xl mx-auto pt-[8px] pb-[5rem]">
-        <div class="border-[#303030] justify-center rounded-[16px] box-content h-[1000px] w-[1223px] py-[24px] px-[24px] p-4 border-2">
+        <div class="border-[#303030] w-[1127px] h-[586px] text-[24px] font-sans p-4 text-white rounded-lg bg-transparent dark:bg-transparent outline-none">
             {{-- first section --}}
             <section class="pb-[40px]">
-                {{-- <div>
-                    <a href="{{ route('profile') }}">
-                        <x-back-button />
-                    </a>
-                </div> --}}
-
                 <div class="pt-[16px]">
                     <input wire:model="title" label="Title" placeholder="Title" type="text" id="large-input"
-                        class="text-[48px] w-[1127px] px-[24px]  font-bold last:block p-4 text-white rounded-lg bg-transparent dark:bg-transparent outline-none">
+                        class="text-[48px] w-[1127px] px-[24px]  font-bold last:block p-4 text-white rounded-lg bg-transparent dark:bg-transparent outline-black">
                 </div>
 
                 <div class="pt-[16px]">
@@ -23,9 +17,8 @@
 
             {{-- second section --}}
             <div>
-                <textarea wire:model="description" label="Title" placeholder="Documentation" type="text" id="large-input"
-                        class="border-[#303030]  w-[1127px] h-[586px]  text-[24px] font-sans last:block  p-4 text-white rounded-lg bg-transparent dark:bg-transparent outline-none">
-                </textarea>
+                <div id="quill-editor" class="mb-3" style="height: 300px;"></div>
+                <input type="hidden" wire:model.defer="description" id="quill-editor-content">
             </div>
             <div class="pt-10">
                 <button type="submit"
@@ -35,3 +28,23 @@
         </div>
     </div>
 </form>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        if (document.getElementById('quill-editor')) {
+            var editor = new Quill('#quill-editor', {
+                theme: 'snow'
+            });
+            var quillContentInput = document.getElementById('quill-editor-content');
+            editor.on('text-change', function() {
+                quillContentInput.value = editor.root.innerHTML;
+                // Trigger input event for Livewire
+                quillContentInput.dispatchEvent(new Event('input'));
+            });
+
+            quillContentInput.addEventListener('input', function() {
+                editor.root.innerHTML = quillContentInput.value;
+            });
+        }
+    });
+</script>

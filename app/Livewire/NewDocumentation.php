@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Livewire;
+
 use App\Models\Documentation;
 use Livewire\Component;
 
@@ -24,14 +25,13 @@ class NewDocumentation extends Component
             'description' => $this->description,
         ]);
 
-        // Use Livewire's reset method to reset the properties
         $this->reset(['title', 'language', 'description']);
 
         session()->flash('message', 'Documentation added successfully.');
     }
 
-
-    public function resetForm() {
+    public function resetForm()
+    {
         $this->title = '';
         $this->language = '';
         $this->description = '';

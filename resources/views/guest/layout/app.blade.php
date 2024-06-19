@@ -7,6 +7,10 @@
     <title>ReCode - @yield('title')</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
+    {{-- script for Quill javascript library --}}
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.5/dist/quill.js"></script>
+    {{-- end --}}
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -25,6 +29,8 @@
     @guest
         @include('livewire.welcome.footer') <!-- this footer is only visible for guest -->
     @endguest
+
+
 </body>
 
 </html>
