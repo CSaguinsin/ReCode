@@ -11,7 +11,8 @@ use App\Livewire\Auth\Verify;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Livewire\DocuDisplay;
-
+use App\Http\Controllers\EditController;
+use App\Models\Documentation;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,6 +39,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile/documentation/{id}', function ($id) {
         return view('/profile/documentation.documentation-index', ['id' => $id]);
     })->name('profile.documentation');
+
 
 
 });

@@ -37,6 +37,10 @@ class NewDocumentation extends Component
         $this->description = '';
     }
 
+    
+
+
+
     public function render()
     {
         return view('livewire.new-documentation');

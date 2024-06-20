@@ -22,10 +22,4 @@ class PagesController extends Controller
         return view('profile.addnew.addnew-index');
     }
 
-    public function documentation($id)
-    {
-        $document = Documentation::findOrFail($id); // Fetch the document by ID
-        return view('profile.documentation.documentation-index', compact('document')); // Pass the document to the view
-    }
-
 }

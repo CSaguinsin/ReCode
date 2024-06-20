@@ -11,7 +11,9 @@
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.5/dist/quill.js"></script>
     {{-- end --}}
-
+    @livewireStyles
+    <!-- Other head content -->
+    @livewireScripts
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body class="bg-[#050419]">

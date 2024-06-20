@@ -1,4 +1,4 @@
-<section class="max-w-[1243px] mx-auto pt-[177px]">
+<section class="max-w-[1243px] mx-auto pt-[100px]">
 
     <div class="flex space-x-[61px]">
         <h1 class="text-white font-sans font-bold text-[48px]">Store 💾, Re-use🛠️, Repeat 🔁</h1>

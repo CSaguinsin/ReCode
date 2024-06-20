@@ -76,8 +76,6 @@
                                 </div>
                                 <!-- End of modal for delete -->
                             </div>
-
-                                    <x-edit-logo/>
                         </td>
                     </div>
                 </tr>
