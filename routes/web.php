@@ -41,7 +41,8 @@ Route::middleware('auth')->group(function () {
         return view('/profile/documentation.documentation-index', ['id' => $id]);
     })->name('profile.documentation');
 
-    Route::get('/social-media-share', [SocialShareButtonsController::class, 'ShareWidget']);
+    Route::get('/share/{documentId}', [SocialShareButtonsController::class, 'ShareWidget'])
+    ->name('share');
 });
 
 Route::middleware('guest')->group(function () {

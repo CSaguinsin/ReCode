@@ -13,6 +13,8 @@ class AllDocumentation extends Component
     public $description;
     public $documents;
 
+
+
     // Define validation rules dynamically
     protected function rules()
     {
@@ -61,22 +63,6 @@ class AllDocumentation extends Component
         return view('livewire.all-documentation', [
             'documents' => $this->documents
         ]);
-    }
-
-    public function ShareWidget()
-    {
-        $shareComponent = \Share::page(
-            'https://www.positronx.io/create-autocomplete-search-in-laravel-with-typeahead-js/',
-            'Your share text comes here',
-        )
-        ->facebook()
-        ->twitter()
-        ->linkedin()
-        ->telegram()
-        ->whatsapp()
-        ->reddit();
-
-        return view('posts', compact('shareComponent'));
     }
 }
 

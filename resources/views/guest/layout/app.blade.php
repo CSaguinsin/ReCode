@@ -21,11 +21,12 @@
     <!-- Other head content -->
     @livewireScripts
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+    @vite('resources/js/app.js')
 </head>
 <body class="bg-[#050419]">
     @if (Route::has('login'))
         @auth
-            @include('livewire.authnavbar') <!-- navigation bar for authenticated users -->
+            @include('livewire.sidebar') <!-- navigation bar for authenticated users -->
         @else
             @include('livewire.welcome.navigation') <!-- navigation bar for guests -->
         @endauth
