@@ -22,4 +22,6 @@ class PagesController extends Controller
         return view('profile.addnew.addnew-index');
     }
 
+    
+
 }

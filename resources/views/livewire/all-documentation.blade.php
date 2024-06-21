@@ -32,9 +32,17 @@
                     <div >
                         <td class="px-6 py-4 text-right text-white flex space-x-[32px] ">
                             <div x-data="{ open: false }">
-                                <button @click="open = ! open" type="button">
-                                    <img src="{{ asset('assets/elements/deleteLogo.png') }}" />
-                                </button>
+                                <div class="flex space-x-4">
+                                    <button @click="open = ! open" type="button">
+                                        <img src="{{ asset('assets/elements/deleteLogo.png') }}" />
+                                    </button>
+                                    {{-- <a href="{{ route('share') }}"> --}}
+                                    <button @click="share = ! share" type="button">
+                                        <img src="{{ asset('assets/elements/share.png') }}" class="h-[24px] w-[24px]" />
+                                    </button>
+
+                                    {{-- <x-share-button /> --}}
+                                </div>
 
                                 <!-- Modal for delete -->
                                 <div x-show="open" tabindex="-1" class=" flex items-center justify-center fixed top-0 right-0 bottom-0 left-0 z-50 w-full h-full max-h-full overflow-hidden"
@@ -75,6 +83,36 @@
                                     </div>
                                 </div>
                                 <!-- End of modal for delete -->
+
+                                {{-- modal for share links --}}
+                                <div x-show="share" tabindex="-1" class=" flex items-center justify-center fixed top-0 right-0 bottom-0 left-0 z-50 w-full h-full max-h-full overflow-hidden"
+                                x-transition:enter="transition ease-out duration-300"
+                                x-transition:enter-start="opacity-0 scale-90"
+                                x-transition:enter-end="opacity-100 scale-100"
+                                x-transition:leave="transition ease-in duration-300"
+                                x-transition:leave-start="opacity-100 scale-100"
+                                x-transition:leave-end="opacity-0 scale-90"
+                                >
+                                    <div class="relative p-4 w-full max-w-md max-h-full">
+                                        <div class="relative bg-[#050419] rounded-lg shadow dark:bg-gray-700">
+                                            <button @click="open = false" type="button" class="absolute top-3 end-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white">
+                                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                                </svg>
+                                                <span class="sr-only">Close modal</span>
+                                            </button>
+                                            <div class="p-4 md:p-5 text-center">
+                                                <button class="group transition-all duration-500 hover:-translate-y-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 93 92" fill="none">
+                                                    <rect x="1.13867" width="91.5618" height="91.5618" rx="15" fill="#337FFF"/>
+                                                    <path d="M57.4233 48.6403L58.7279 40.3588H50.6917V34.9759C50.6917 32.7114 51.8137 30.4987 55.4013 30.4987H59.1063V23.4465C56.9486 23.1028 54.7685 22.9168 52.5834 22.8901C45.9692 22.8901 41.651 26.8626 41.651 34.0442V40.3588H34.3193V48.6403H41.651V68.671H50.6917V48.6403H57.4233Z" fill="white"/>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- end of modal for share links --}}
                             </div>
                         </td>
                     </div>
@@ -84,3 +122,5 @@
 
     </table>
 </div>
+
+

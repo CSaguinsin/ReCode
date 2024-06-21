@@ -13,6 +13,7 @@ use App\Http\Controllers\PagesController;
 use App\Livewire\DocuDisplay;
 use App\Http\Controllers\EditController;
 use App\Models\Documentation;
+use App\Http\Controllers\SocialShareButtonsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,8 +41,7 @@ Route::middleware('auth')->group(function () {
         return view('/profile/documentation.documentation-index', ['id' => $id]);
     })->name('profile.documentation');
 
-
-
+    Route::get('/social-media-share', [SocialShareButtonsController::class, 'ShareWidget']);
 });
 
 Route::middleware('guest')->group(function () {
