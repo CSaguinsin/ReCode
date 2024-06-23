@@ -25,21 +25,21 @@ class NewDocumentation extends Component
             'description' => $this->description,
         ]);
 
-        $this->reset(['title', 'language', 'description']);
+        // Explicitly reset form fields
+        $this->resetForm();
 
         session()->flash('message', 'Documentation added successfully.');
+
+        return redirect('/profile');
+
     }
 
-    public function resetForm()
+    private function resetForm()
     {
         $this->title = '';
         $this->language = '';
         $this->description = '';
     }
-
-    
-
-
 
     public function render()
     {

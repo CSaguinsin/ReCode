@@ -1,8 +1,8 @@
-<div class="lg:justify-center  relative overflow-x-auto shadow-md sm:rounded-lg pt-[50px]">
-    <h1 class="text-white font-bold text-center text-[6rem]">{{ $document->title }}</h1>
+<div class="lg:justify-center  lg:ml-[15rem]  relative overflow-x-auto shadow-md sm:rounded-lg pt-[50px]">
+    <h1 class="text-white lg:text-center font-bold text-[6rem]">{{ $document->title }}</h1>
     <h3 class="text-white font-semibold text-center text-[2rem]">{{ $document->language }}</h3>
-    <div class="sm:text-left sm:mx-[20rem]  max-w-screen-xl pt-[32px] pb-[5rem]">
-        <p class="text-[#ff4141] font-sans w-[350px] text-left text-[16px]"><code>{!! $document->description !!}</code></p>
+    <div class="sm:text-left sm:mx-[20rem] pt-[32px] pb-[5rem]">
+        <p class="font-sans w-[350px] text-left text-[16px]"><code>{!! $document->description !!}</code></p>
 
     </div>
 </div>

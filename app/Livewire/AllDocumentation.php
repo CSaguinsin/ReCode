@@ -34,6 +34,7 @@ class AllDocumentation extends Component
     {
         $document = Documentation::findOrFail($id);
         $document->delete();
+        // Livewire will automatically re-render the component
     }
 
     public function update()
@@ -47,22 +48,18 @@ class AllDocumentation extends Component
             'description' => $this->description,
         ]);
 
-        $this->emit('documentUpdated');
+        $this->emit('documentUpdated'); // You can use this event if needed
 
         $this->reset(['title', 'language', 'description']);
-
-
-            return view('livewire.edit-documents', [
-                'documents' => $this->documents
-            ]);
-
     }
 
     public function render()
     {
+        $this->documents = Documentation::all(); // Fetch all documents
         return view('livewire.all-documentation', [
             'documents' => $this->documents
         ]);
     }
+
 }
 

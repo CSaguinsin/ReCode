@@ -1,8 +1,8 @@
 <section class="max-w-[1087px] mx-auto pt-[24px]">
 
-    <div class="max-w-[950px] mx-auto">
-        <h1 class="text-white font-sans text-center font-bold text-[60px]">Where Developers 👨🏽‍💻 Centralize and Re-use Code Effortlessly 🚀</h1>
-        <p class="text-white text-center mt-[24px] text-[24px]">Unlocking Innovation: Streamline Development with ReCode – Your Central Hub for Storing and Compiling Reusable Code Snippets!</p>
+    <div class="max-w-[900px] mx-auto">
+        <h1 class="text-white font-sans text-center font-bold text-[60px]">Empowering Developers 👨🏽‍💻 With Code Snippet Management Platform 🚀</h1>
+        <p class="text-[#b4b4b4] text-center mt-[24px] text-[24px]">🚀 Built for developers to supercharge efficiency and ignite innovation: ReCode Your Development Workflow 🌟</p>
     </div>
 
     <div class="flex justify-center items-center pt-[24px]">

@@ -1,4 +1,4 @@
-<section class="max-w-[1087px] mx-auto pt-[100px]">
+<section class="max-w-[1087px] mx-auto pt-[150px]">
     <div class="flex space-x-[126px] justify-center items-center">
         <div class="w-[339px]">
             <p class="text-white font-sans text-[16px]">

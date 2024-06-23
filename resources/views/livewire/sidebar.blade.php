@@ -33,25 +33,17 @@ new class extends Component
     </div>
     <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
       <ul class="space-y-1.5">
+        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm">
+            <a href="{{ route('profile.addnew') }}" class="text-white font-semibold w-[150px] h-[48px] bg-[#21E8E6] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-[14px] text-center flex items-center justify-center">
+                {{-- <x-add-newbutton /> --}}
+                {{ "ADD NEW "}}
+            </a>
+          </button>
         <li>
             <a href="{{ route('profile') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-white rounded-lg hover:bg-[#303030] dark:bg-neutral-700 dark:text-white" href="#">
             <x-dashboard-logo />
             {{ "Dashboard" }}
           </a>
-        </li>
-
-        <li class="hs-accordion" id="users-accordion">
-          <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm">
-            <a href="{{ route('profile.addnew') }}" class="text-black font-semibold w-[150px] h-[48px] bg-[#21E8E6] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-[14px] text-center flex items-center justify-center">
-                <x-add-newbutton />
-                {{ "Add new "}}
-            </a>
-          </button>
-
-          <div id="users-accordion" class="hs-accordion-content w-full overflow-hidden transition-[height] duration-300 hidden">
-            <ul class="hs-accordion-group ps-3 pt-2" data-hs-accordion-always-open>
-            </ul>
-          </div>
         </li>
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
@@ -60,14 +52,14 @@ new class extends Component
                     {{ "Logout" }}
                 </button>
             </form>
-        <li class="hs-accordion" id="projects-accordion">
+        {{-- <li class="hs-accordion" id="projects-accordion">
         <a href="{{ route('profile') }}">
             <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  text-white rounded-lg hover:bg-[#303030] dark:bg-neutral-700 dark:text-white">
                 <x-code-snippets />
                 {{ "Code Snippets" }}
           </button>
         </a>
-        </li>
+        </li> --}}
         <li>
             <a href="https://github.com/CSaguinsin/ReCode" target="_blank" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  text-white rounded-lg hover:bg-[#303030] dark:bg-neutral-700 dark:text-white">
                 <x-documentation-logo />
