@@ -12,7 +12,7 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
         <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
+		<link rel="shortcut icon" href="{{ url(asset('ReCode.png')) }}">
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">

@@ -7,7 +7,7 @@
                 <x-logo class="w-auto h-16 text-indigo-600" />
             </a>
         </div>
-        
+
 
         <h2 class="mt-6 text-3xl font-extrabold text-center text-white leading-9">
             Sign in to your account
@@ -83,7 +83,7 @@
                         <div class="flex-grow border-t border-gray-400"></div>
                     </div>
                 </div>
-        
+
                 <div class="flex justify-center items-center pt-[32px]">
                     <x-google-logo class="w-[180px] h-[180px]" />
                 </div>

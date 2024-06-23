@@ -1,7 +1,7 @@
 <section class="max-w-[1087px] mx-auto pt-[56px]">
-    <div class="flex space-x-[32px] justify-center items-center">
+    <div class="lg:flex space-x-[32px] lg:justify-center items-center">
         <div>
-            <img src="{{ asset('assets/elements/aboutMe.png') }}" class="w-[230px] h-[266px]" />
+            <img src="{{ asset('assets/elements/aboutMe.png') }}" class="lg:w-[230px] lg:h-[266px]" />
         </div>
         <div>
             <h1 class="text-white font-sans  font-bold text-[24px]">Hi👋, I’m Carl Saginsin</h1>
