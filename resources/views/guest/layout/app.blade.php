@@ -22,7 +22,7 @@
     @livewireStyles
     <!-- Other head content -->
     @livewireScripts
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+  
     @vite('resources/js/app.js')
 </head>
 <body class="bg-[#050419]">
