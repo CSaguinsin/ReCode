@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ReCode | Built for Developers - @yield('title')</title>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="/build/manifest.json" rel="manifest">
+
 
     {{-- script for Quill javascript library --}}
     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
@@ -22,8 +24,7 @@
     @livewireStyles
     <!-- Other head content -->
     @livewireScripts
-  
-    @vite('resources/js/app.js')
+
 </head>
 <body class="bg-[#050419]">
     @if (Route::has('login'))
