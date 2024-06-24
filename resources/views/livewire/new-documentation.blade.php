@@ -18,7 +18,7 @@
             {{-- second section --}}
             <div>
                 <div id="quill-editor" class="mb-3" style="height: 300px;"></div>
-                <input type="hidden" wire:model.defer="description" id="quill-editor-content">
+                <input type="hidden"  wire:model.defer="description" id="quill-editor-content">
             </div>
             <div class="pt-10">
                 <button type="submit"

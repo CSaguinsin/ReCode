@@ -33,12 +33,12 @@ new class extends Component
     </div>
     <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
       <ul class="space-y-1.5">
-        <button type="button" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm">
-            <a href="{{ route('profile.addnew') }}" class="text-white font-semibold w-[150px] h-[48px] bg-[#21E8E6] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-sm px-4 py-[14px] text-center flex items-center justify-center">
+        {{-- <button type="button" class=" hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm"> --}}
+            <a href="{{ route('profile.addnew') }}" class="text-white font-semibold w-[150px] h-[48px] bg-[#21E8E6] hover:bg-blue-800  rounded-lg text-sm px-4 py-[14px] text-center flex items-center justify-center">
                 {{-- <x-add-newbutton /> --}}
                 {{ "ADD NEW "}}
             </a>
-          </button>
+
         <li>
             <a href="{{ route('profile') }}" class="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-white rounded-lg hover:bg-[#303030] dark:bg-neutral-700 dark:text-white" href="#">
             <x-dashboard-logo />
@@ -47,7 +47,7 @@ new class extends Component
         </li>
             <form method="POST" action="{{ route('logout') }}">
                 @csrf
-                <button type="submit" class="hs-accordion-toggle hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  text-white rounded-lg hover:bg-[#303030] dark:bg-neutral-700 dark:text-white">
+                <button type="submit" class=" hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm  text-white rounded-lg hover:bg-[#303030] dark:bg-neutral-700 dark:text-white">
                     <x-logout-logo />
                     {{ "Logout" }}
                 </button>
