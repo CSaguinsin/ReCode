@@ -11,7 +11,8 @@
         @endif
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <link href="/build/manifest.json" rel="manifest">
-        <link href="/build/css/app.css" rel="stylesheet">
+        <link href="/build/assets/app-CCLi5Phe.css" rel="stylesheet">
+        <link href="/build/assets/app-qVBN5XO4.js" rel="stylesheet">
 
         <!-- Favicon -->
 		<link rel="shortcut icon" href="{{ url(asset('ReCode.png')) }}">
