@@ -10,6 +10,8 @@
             <title>{{ config('app.name') }}</title>
         @endif
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+        <link href="/build/manifest.json" rel="manifest">
+        <link href="/build/css/app.css" rel="stylesheet">
 
         <!-- Favicon -->
 		<link rel="shortcut icon" href="{{ url(asset('ReCode.png')) }}">
@@ -17,7 +19,7 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
         @livewireStyles
         @livewireScripts
 
