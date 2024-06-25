@@ -11,7 +11,7 @@
         @endif
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
         <link href="public/build/manifest.json" rel="manifest">
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link href="resources/css/app.css" rel="stylesheet">
 
 
         <!-- Favicon -->
